@@ -19,6 +19,8 @@ class PngPlayer
                 source.connect(context.destination)
                 source.start(0)
                 console.log("start!")
+            , (err) ->
+                console.error(err)
         xhr.send(null)
 
 window.PngPlayer = PngPlayer
