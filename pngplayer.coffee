@@ -1,3 +1,5 @@
+window.AudioContext = window.AudioContext||window.webkitAudioContext
+
 class PngPlayer
     play: (url) ->
         console.log("loading...")
